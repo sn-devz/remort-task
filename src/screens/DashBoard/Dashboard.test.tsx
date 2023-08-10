@@ -5,6 +5,17 @@ import DashBoard from './Dashboard';
 import {useNavigation} from '@react-navigation/native';
 
 jest.mock('@react-navigation/native');
+jest.mock('../../hooks/useRequestProcess', () => ({
+  useRequestProcess: () => {
+    const mockUsePosts = jest.fn();
+    mockUsePosts.mockReturnValue({
+      data: null,
+      isLoading: false,
+      isSuccess: false,
+    });
+    return {usePosts: mockUsePosts};
+  },
+}));
 
 describe('DashBoard', () => {
   test('render text', () => {

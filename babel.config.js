@@ -5,7 +5,17 @@ module.exports = {
     '@babel/preset-typescript',
     '@babel/preset-react',
   ],
-  plugins: ['react-native-reanimated/plugin', 'optional-require'],
+  plugins: [
+    'react-native-reanimated/plugin',
+    'optional-require',
+    [
+      'module:react-native-dotenv',
+      {
+        moduleName: '@env',
+        path: '.env',
+      },
+    ],
+  ],
   env: {
     production: {
       plugins: ['react-native-paper/babel'],

@@ -3,9 +3,13 @@ import React, {ReactElement} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import CustomButton from '../../components/Button/Button';
 import {useNavigation} from '@react-navigation/native';
+// import {useRequestProcess} from '../../hooks/useRequestProcess';
 
 const DashBoard: () => ReactElement = () => {
   // const count = useSelector((state: any) => state.counter.count);
+  // const {usePosts} = useRequestProcess();
+  // const {data, isLoading, isSuccess} = usePosts();
+
   const navigation = useNavigation();
 
   const navigateToNext = () => navigation.navigate('ManageCatagory');
