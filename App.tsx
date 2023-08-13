@@ -1,18 +1,12 @@
 import React from 'react';
+import BottomTab from './src/routes/BottomTab';
 import AppProvider from './src/AppProvider';
-import MainRoutes from './src/routes/MainRoutes/MainRoutes';
-import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
-// Create a client
-const queryClient = new QueryClient();
 
 function App(): JSX.Element {
   return (
     <AppProvider>
-      <QueryClientProvider client={queryClient}>
-        <MainRoutes />
-      </QueryClientProvider>
+      <BottomTab />
     </AppProvider>
   );
 }
-
 export default App;

@@ -1,0 +1,28 @@
+{
+  "data": {
+    "price": "25.00",
+    "name": "Dinner with Fairgrove Partners",
+    "description": "Join us for an unforgettable evening of fine dining and networking",
+    "participants": [
+      {"id": 1, "img": "@assets/p1.png"},
+      {"id": 1, "img": "@assets/p2.png"},
+      {"id": 1, "img": "@assets/p3.png"},
+      {"id": 1, "img": "@assets/p1.png"}
+    ],
+    "catagory": ["🎻 Art & Music", "⚽️  Sport", "🎬 Movie"],
+    "tickeTime": "23:59, 17/05/23",
+    "date": "Wed, Mar 29",
+    "time": "19:00 - 20:00",
+    "loaction": "Museum of Natural History University Of Oxford,  Pitt Rivers Museum OX1 3PP",
+    "organized": [
+      {
+        "source": "1",
+        "name": "Oxford Women in Business"
+      },
+      {
+        "source": "1",
+        "name": "Oxford Women in Business"
+      }
+    ]
+  }
+}
